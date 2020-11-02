@@ -10,6 +10,10 @@
 #' for Average Medicare Payments based on the methods
 #' @export
 #'
+#'
+#' @importFrom knitr kable
+#' @importFrom tidyverse
+#'
 #' @examples
 #' medicare_stat (DRG, mean)
 #' medicare_stat (DRG, median)
@@ -17,7 +21,7 @@
 #'
 ### Function 2:
 # Calculates statistics over all of the DRG codesfor Average Medicare payments
-medicare_stat <- function (df, method) {
+medicare_stat <- function(df, method) {
   table <- df %>%
     select(`DRG Code`, `DRG Description`, Average.Medicare.Payments) %>%
     group_by(`DRG Code`, `DRG Description`) %>%

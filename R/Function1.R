@@ -10,6 +10,10 @@
 #' @return a list of boxplots of payment method by DRG code.
 #' @export
 #'
+#' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 geom_boxplot
+#' @importFrom tidyverse
+#'
 #' @examples
 #' DRG_box(df = DRG, payments = "Average.Medicare.Payments")
 #' DRG_box(df = DRG, payments = "Average.Covered.Charges")
