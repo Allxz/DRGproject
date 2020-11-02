@@ -1,0 +1,18 @@
+Package: DRGproject
+Type: Package
+Title: Boxplot and Statistical Functions for DRG Data Frame
+Version: 0.1.0
+Author: Zizhuo Xu
+Maintainer: <zix4001@med.cornell.edu>
+Description: This package contains two functions. First produces boxplot and second
+    calcualte mean, median, and standard deviation for DRG data frame
+Imports: ggplot2,
+         tidyverse,
+         knitr,
+         dplyr,
+License: NA
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+
+
